@@ -1,5 +1,5 @@
 function tinhHinhTron(){
-    let banKinh = parseFloat(prompt("Nhap ban kinh hinh tron:"));
+    let banKinh = parseInt(prompt("Nhap ban kinh hinh tron:"));
     if (isNaN(banKinh) || banKinh <= 0){
         alert("Ban kinh khong hop le.");
         return;
@@ -9,8 +9,8 @@ function tinhHinhTron(){
     alert("Dien tich hinh tron: " + dienTichHinhTron.toFixed(2) + "\nChu vi hinh tron: " + chuViHinhTron.toFixed(2));
 }
 function tinhHinhChuNhat(){
-    let chieuDai = parseFloat(prompt("Nhap chieu dai hinh chu nhat:"));
-    let chieuRong = parseFloat(prompt("Nhap chieu rong hinh chu nhat:"));
+    let chieuDai = parseInt(prompt("Nhap chieu dai hinh chu nhat:"));
+    let chieuRong = parseInt(prompt("Nhap chieu rong hinh chu nhat:"));
     if (isNaN(chieuDai) || chieuDai <= 0 || isNaN(chieuRong) || chieuRong <= 0){
         alert("Kich thuoc khong hop le.");
         return;
